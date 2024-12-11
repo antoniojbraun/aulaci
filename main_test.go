@@ -16,6 +16,8 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+// Comentario teste
+
 var ID int
 
 func SetupDasRotasDeTeste() *gin.Engine {
