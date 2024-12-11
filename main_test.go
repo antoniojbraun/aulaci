@@ -16,6 +16,8 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+// Comentario teste
+
 var ID int
 
 func SetupDasRotasDeTeste() *gin.Engine {
@@ -25,7 +27,7 @@ func SetupDasRotasDeTeste() *gin.Engine {
 }
 
 func CriaAlunoMock() {
-	aluno := models.Aluno{Nome: "Nome do Aluno Teste", CPF: "12345678901", RG: "123456789"}
+	aluno := models.Aluno{Nome: "Nome do Aluno Genio", CPF: "12345678901", RG: "123456789"}
 	database.DB.Create(&aluno)
 	ID = int(aluno.ID)
 }
